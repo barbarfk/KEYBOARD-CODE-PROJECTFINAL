@@ -143,8 +143,13 @@ void sendKeyCommand(char key) {
  Serial.println(key);
  switch (key) {
  case '1':
- Keyboard.println("BUTTON CONTROL 1");
- break;
+ Keyboard.println("if() {");
+ Keyboard.println("}");
+ Keyboard.write(KEY_UP_ARROW);
+ Keyboard.write(KEY_UP_ARROW);
+ Keyboard.write(KEY_RIGHT_ARROW);
+ Keyboard.write(KEY_RIGHT_ARROW);
+ Keyboard.write(KEY_RIGHT_ARROW); break;
  case '2':
  Keyboard.println("BUTTON CONTROL 2");
  break;
